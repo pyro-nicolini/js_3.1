@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,27 +13,27 @@
             <h3>Mackbook Pro M1</h3>
             <img class="img-card" src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjLgyYar3mA5nUZeGQMtB_Z9obOQMjFYsrk7OTX5wHQ5CSlUYAZW5tvuFqWnRi6ilpHVs&usqp=CAU'></img>
             <div>
-                  <h6><strong>Colores disponibles</strong></h6>
-                  <button class="rojo" style="background-color: rgba(255, 0, 0, 0.974)"></button>
-                  <button class="azul" style="background-color: #005fc5"></button>
-                  <button class="yellow" style="background-color: #ce7f00"></button>
-                  <button class="dark" style="background-color: black"></button>
-              </div>
-              <p>Precio base: <strong>$<span class="precio-inicial"></span></strong></p>
-              <p>Cantidad:
+                <button class="rojo" style="background-color: rgba(255, 0, 0, 0.974)"></button>
+                <button class="azul" style="background-color: #005fc5"></button>
+                <button class="yellow" style="background-color: #ce7f00"></button>
+                <button class="dark" style="background-color: black"></button>
+            </div>
+            <h6 style="margin-bottom: 10px;"><strong>Colores disponibles</strong></h6>
+            <p>Precio base: <strong>$<span class="precio-inicial"></span></strong></p>
+            <div>Cantidad:
                 <span class="cantidad">0</span>
-                <button onclick="cantidadSpan.innerHTML = cantidad++; cantidadSpan.innerHTML = cantidad; precioTotal.innerHTML = (cantidad * precio).toLocaleString('es-CL');">+</button>
-                <button onclick="if (cantidad > 0) {
+                <button class="disminuir" onclick="if (cantidad > 0) {
                     cantidadSpan.innerHTML = cantidad--; cantidadSpan.innerHTML = cantidad; precioTotal.innerHTML = (cantidad * precio).toLocaleString('es-CL');
-                }">-</button>
-              </p>
+                }">-
+                </button>
+                <button class="aumentar" onclick="cantidadSpan.innerHTML = cantidad++; cantidadSpan.innerHTML = cantidad; precioTotal.innerHTML = (cantidad * precio).toLocaleString('es-CL');">+
+                </button>
             </div>
         </div>
+        <div class="total-section">
+            <p><strong>Total a pagar: $<span class="valor-total"></span></strong></p>
+        </div>
     </section>
-    <div class="total-section">
-        <p><strong>Total a pagar: $<span class="valor-total"></span></strong></p>
-    </div>
-    <script src="js/index.js">
-    </script>
+    <script src="js/index.js"></script>
 </body>
 </html>
