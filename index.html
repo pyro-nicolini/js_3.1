@@ -11,10 +11,16 @@
 <body>
     <section>
         <div class="card">
-            <div class="img-card"></div>
-              <h6>Laptop Gamer AMD</h6>
-              <p>Precio base: $<span class="precio-inicial"></span> </p>
-        
+            <h3>Chipset Gamer AMD</h3>
+            <img class="img-card" src='https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2668300-amd-ryzen-ai.jpg'></img>
+            <div>
+                  <h6>Colores disponibles</h6>
+                  <button class="red" style="background-color: red"></button>
+                  <button class="green" style="background-color: green"></button>
+                  <button class="orange" style="background-color: rgb(255, 119, 0)"></button>
+                  <button class="dark" style="background-color: black"></button>
+              </div>
+              <p>Precio base: <strong>$<span class="precio-inicial"></span></strong></p>
               <p>Cantidad:
                 <span class="cantidad">0</span>
                 <button onclick="cantidadSpan.innerHTML = cantidad++; cantidadSpan.innerHTML = cantidad; precioTotal.innerHTML = (cantidad * precio);">+</button>
@@ -26,7 +32,7 @@
         </div>
     </section>
     <div class="total-section">
-        <p>Total a pagar: $<span class="valor-total"></span> </p>
+        <p><strong>Total a pagar: $<span class="valor-total"></span></strong></p>
     </div>
     <script src="index.js">
     </script>
