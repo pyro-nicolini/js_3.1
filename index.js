@@ -5,42 +5,34 @@ const precio = 400000;
 
 precioSpan.innerHTML = precio;
 
-
 let precioTotal = document.querySelector(".valor-total");
 
+let bordeColor = document.querySelector(".img-card")
 
-let btnRed = document.querySelector(".red")
-btnRed.addEventListener("click", () => {
-    let bgCard = document.querySelector(".card")
-    bgCard.style.backgroundColor = "rgba(255, 0, 0, 1)";
+let rojo = document.querySelector(".rojo")
+rojo.addEventListener("click", () => {
+    bordeColor.style.borderColor = "red";
     let img = document.querySelector(".img-card")
-    img.src = 'https://www.amd.com/content/dam/amd/en/images/products/graphics/1913654-radeon-rx-7000-series-graphics-cards.jpg';
+    img.src = 'https://i.pinimg.com/736x/e7/61/f5/e761f563d53ef6994c050f0ab918266a.jpg';
 })
 
-let btnGreen = document.querySelector(".green")
-btnGreen.addEventListener("click", () => {
-    let bgCard = document.querySelector(".card")
-    bgCard.style.backgroundColor = "#007d0c";
+let azul = document.querySelector(".azul")
+azul.addEventListener("click", () => {
+    bordeColor.style.borderColor = "blue";
     let img = document.querySelector(".img-card")
-    img.src = 'https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2668300-amd-ryzen-ai.jpg';
+    img.src = 'https://media.s-bol.com/3G1qPAYWl6z4/2yMoRA/1200x729.jpg';
 })
 
-
-
-let btnOrange = document.querySelector(".orange")
-btnOrange.addEventListener("click", () => {
-    let bgCard = document.querySelector(".card")
-    bgCard.style.backgroundColor = "#ff3300";
+let yellow = document.querySelector(".yellow")
+yellow.addEventListener("click", () => {
+    bordeColor.style.borderColor = "yellow";
     let img = document.querySelector(".img-card")
-    img.src = 'https://www.amd.com/content/dam/amd/en/images/pr/embedded-1.jpg';
+    img.src = 'https://m.media-amazon.com/images/I/31j78K0iFaL.jpg';
 });
 
-
-
-let btnDark = document.querySelector(".dark")
-btnDark.addEventListener("click", () => {
-    let bgCard = document.querySelector(".card")
-    bgCard.style.backgroundColor = "#080808";
+let dark = document.querySelector(".dark")
+dark.addEventListener("click", () => {
+    bordeColor.style.borderColor = "black";
     let img = document.querySelector(".img-card")
-    img.src = 'https://www.amd.com/content/dam/amd/en/images/pr/corporate-3.jpg';
+    img.src = 'https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2020%2F12%2Fapple-files-matte-black-macbook-patent-application-info-tw.jpg?w=1080&cbr=1&q=90&fit=max';
 })
