@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
             <img class="img-card" src='https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2668300-amd-ryzen-ai.jpg'></img>
             <div>
                   <h6>Colores disponibles</h6>
-                  <button class="red" style="background-color: red"></button>
+                  <button class="red" style="background-color: rgba(255, 0, 0, 0.974)"></button>
                   <button class="green" style="background-color: green"></button>
                   <button class="orange" style="background-color: rgb(255, 119, 0)"></button>
                   <button class="dark" style="background-color: black"></button>
@@ -23,10 +23,10 @@
               <p>Precio base: <strong>$<span class="precio-inicial"></span></strong></p>
               <p>Cantidad:
                 <span class="cantidad">0</span>
-                <button onclick="cantidadSpan.innerHTML = cantidad++; cantidadSpan.innerHTML = cantidad; precioTotal.innerHTML = (cantidad * precio);">+</button>
+                <button onclick="cantidadSpan.innerHTML = cantidad++; cantidadSpan.innerHTML = cantidad; precioTotal.innerHTML = (cantidad * precio).toLocaleString('es-CL');">+</button>
                 <button onclick="if (cantidad > 0) {
-                    cantidadSpan.innerHTML = cantidad--;
-                } cantidadSpan.innerHTML = cantidad; precioTotal.innerHTML = (cantidad * precio);">-</button>
+                    cantidadSpan.innerHTML = cantidad--; cantidadSpan.innerHTML = cantidad; precioTotal.innerHTML = (cantidad * precio).toLocaleString('es-CL');
+                }">-</button>
               </p>
             </div>
         </div>

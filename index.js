@@ -5,12 +5,14 @@ const precio = 400000;
 
 precioSpan.innerHTML = precio;
 
+
 let precioTotal = document.querySelector(".valor-total");
+
 
 let btnRed = document.querySelector(".red")
 btnRed.addEventListener("click", () => {
     let bgCard = document.querySelector(".card")
-    bgCard.style.backgroundColor = "#ff3939";
+    bgCard.style.backgroundColor = "rgba(255, 0, 0, 1)";
     let img = document.querySelector(".img-card")
     img.src = 'https://www.amd.com/content/dam/amd/en/images/products/graphics/1913654-radeon-rx-7000-series-graphics-cards.jpg';
 })
