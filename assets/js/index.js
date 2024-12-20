@@ -6,6 +6,7 @@ const precio = 400000;
 precioSpan.innerHTML = precio;
 
 let precioTotal = document.querySelector(".valor-total");
+
 let bordeColor = document.querySelector(".img-card")
 let img = document.querySelector(".img-card")
 
