@@ -22,12 +22,8 @@
             <p>Precio base: <strong>$<span class="precio-inicial"></span></strong></p>
             <div>Cantidad:
                 <span class="cantidad">0</span>
-                <button class="disminuir" onclick="if (cantidad > 0) {
-                    cantidadSpan.innerHTML = cantidad--; cantidadSpan.innerHTML = cantidad; precioTotal.innerHTML = (cantidad * precio).toLocaleString('es-CL');
-                }">-
-                </button>
-                <button class="aumentar" onclick="cantidadSpan.innerHTML = cantidad++; cantidadSpan.innerHTML = cantidad; precioTotal.innerHTML = (cantidad * precio).toLocaleString('es-CL');">+
-                </button>
+                <button class="disminuir" onclick="disminuir()">-</button> <!-- hice la lógica en los botones, pero los pase a index.js-->
+                <button class="aumentar" onclick="aumentar()">+</button> <!-- hice la lógica en los botones, pero los pase a index.js-->
             </div>
         </div>
         <div class="total-section">

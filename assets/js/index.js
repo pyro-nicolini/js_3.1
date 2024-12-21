@@ -1,14 +1,26 @@
 let cantidadSpan = document.querySelector('.cantidad')
 let precioSpan = document.querySelector(".precio-inicial");
+let img = document.querySelector(".img-card")
+let precioTotal = document.querySelector(".valor-total");
+let bordeColor = document.querySelector(".img-card")
 let cantidad = 0;
 const precio = 400000;
 
 precioSpan.innerHTML = precio;
 
-let precioTotal = document.querySelector(".valor-total");
+function disminuir() {
+    if (cantidad > 0) {
+        cantidadSpan.innerHTML = cantidad--;
+        cantidadSpan.innerHTML = cantidad;
+        precioTotal.innerHTML = (cantidad * precio).toLocaleString('es-CL');
+    }
+}
 
-let bordeColor = document.querySelector(".img-card")
-let img = document.querySelector(".img-card")
+function aumentar() {
+    cantidadSpan.innerHTML = cantidad++;
+    cantidadSpan.innerHTML = cantidad;
+    precioTotal.innerHTML = (cantidad * precio).toLocaleString('es-CL');;
+}
 
 let rojo = document.querySelector(".rojo")
 rojo.addEventListener("click", () => {
